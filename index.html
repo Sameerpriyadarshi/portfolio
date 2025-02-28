@@ -1,105 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <title>Chat3</title>
 </head>
+<body class="h-full w-auto" >
 
-<body>
 
-    <div class="h-full p-3  bg-black  border border-purple-700 w-full">
-        <div class=" flex items-center">
-            <img class="w-[7%] bg-black  h-full pl-5"
-                src="https://img.freepik.com/premium-vector/sp-letter-logo-design-black-background-initial-monogram-letter-sp-logo-design-vector-template_634196-1205.jpg"
-                alt="">
-            <div class="w-full gap-8 transition-all   flex justify-end h-[20%]">
-                <p class="text-xl text-white hover:scale-95 hover:text-red-600  font-semibold">Profile</p>
-                <p class="text-xl text-white hover:scale-95 hover:text-red-600 font-semibold">Skills</p>
-                <p class="text-xl text-white  hover:scale-95 hover:text-red-600 font-semibold">Education</p>
-                <p class="text-xl text-white  hover:scale-95 hover:text-red-600 font-semibold">Project</p>
-                <p class="text-xl text-white  hover:scale-95 hover:text-red-600 font-semibold">About</p>
-                <p class="text-xl text-white   hover:scale-95 hover:text-red-600 pr-5 font-semibold">Content</p>
+    <div class=" h-full w-full bg-black flex   relative">
 
+    <!-- navbar -->
+
+        <div class="h-16 w-screen lg:flex overflow-hidden items-center justify-between fixed bg-black border border-b border-gray-500 z-50 top-0 shadow-lg shadow-purple-600">
+          
+                <div class="p-6 mx-2 py-10">
+                    <img  class="py-3"  src="https://chat3.one/_nuxt/Chat3_logo.DpKPMtEx.svg"  class=""> 
+                    
+                </div>
+                
+                <div>
+                
+                <ul class="flex  text-white p-6  mr-6 gap-10 items-center ">
+                    <li class="font-serif font-semibold hover:text-red-700">INTRO</li>
+                    <li class="font-serif font-semibold hover:text-red-700">FEATURES</li>
+                    <li class="font-serif font-semibold hover:text-red-700">COMMUNITY</li>
+                    <li class="font-serif font-semibold hover:text-red-700">PARTERNS</li>
+                    <button class="bg-[#6238FB] py-2 p-7  font-semibold  rounded-xl">SIGN IN</button>
+                </ul>
             </div>
         </div>
-
-    </div>
-
-    <!-- section 1 -->
-
-    <div class="w-full flex h-screen bg-black items-center justify-center">
-        <div class="w-[40%] ">
-            <div class="w-auto h-[50%]">
-                <p class="text-white text-5xl py-10 font-bold">I'm Sameer Priyadarshi</p>
-
-            </div>
-
-            <p class="text-white">I am a MERN developer slilled in bulding web application using MongoDB, Express.js
-                React, and Node.js. </p>
-            <p class="text-3xl text-white py-7">I am React Developer </p>
-
-            <div
-                class="text-white text-xl font-bold rounded-xl flex items-center pl-3 py-3 justify-center bg-blue-800 w-[37%] hover:scale-95 h-full">
-                <button>Download Resume</button>
-            </div>
-
-        </div>
-        <div class="w-[40%] ">
-            <img class="w-[30vw] pl-5 shadow-2xl shadow-red-700 rounded-full hover:scale-95 h-[60vh]" src="./photo.jfif"
-                alt="">
-        </div>
-    </div>
-
-    <!-- section 2 -->
-
-    <div class="w-full h-[40%] flex items-center bg-black justify-center">
-        <p class="text-5xl font-bold text-white  underline ">Skills</p>
-    </div>
-
-    <!-- logo -->
-    <div class="w-full grid bg-black p-20 gap-10 py-20 grid-cols-4 h-full">
-        <div class="w-[50%]  border flex h-[90%] ml-10  items-center hover:scale-95 shadow-2xl shadow-blue-700">
-            <img src="https://mern-rajesh-portfolio.web.app/assets/tech/html.png" alt="">
-        </div>
-        <div class="w-[50%] flex border shadow-2xl hover:scale-95 ml-10  shadow-blue-700  h-[90%]">
-            <img src="https://mern-rajesh-portfolio.web.app/assets/tech/tailwind.png" alt="">
-        </div>
-        <div class="w-[50%] flex border shadow-2xl hover:scale-95 ml-10  shadow-blue-700 h-[90%]">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS82cHZ4TQ-b97tuC7Z4QF0ueNj7juqkPbXxA&s"
-                alt="">
-        </div>
-        <div class="w-[50%] flex border shadow-2xl hover:scale-95  ml-10 shadow-blue-700 h-[90%]">
-            <img src="https://mern-rajesh-portfolio.web.app/assets/tech/reactjs.png" alt="">
-        </div>
-        <div class="w-[50%] flex border shadow-2xl hover:scale-95 ml-10 shadow-blue-700  h-[90%]">
-            <img src="https://mern-rajesh-portfolio.web.app/assets/tech/nodejs.png" alt="">
-        </div>
-        <div class="w-[50%] flex border shadow-2xl hover:scale-95  ml-10 shadow-blue-700 h-[90%]">
-            <img src="https://i.pinimg.com/564x/71/5b/59/715b59c8c7545d9dafb1a04111edde40.jpg" alt="">
-        </div>
-        <div class="w-[50%] flex  border shadow-2xl hover:scale-95 ml-10  shadow-blue-700 h-[90%]">
-            <img src="https://mern-rajesh-portfolio.web.app/assets/tools/vscode.png" alt="">
-        </div>
-        <div class="w-[50%] flex border shadow-2xl hover:scale-95 ml-10  shadow-blue-700 h-[90%] ">
-            <img src="https://ih1.redbubble.net/image.2189776566.6167/raf,360x360,075,t,fafafa:ca443f4786.jpg" alt="" />
-        </div>
-
-
-    </div>
- 
-      <!-- section 3  -->
-
-    <div>
         
+     <!-- whatsapp logo  -->
+
+    </div>
+    <div class="bg-black   fixed z-50 bottom-40 right-28  animate-pulse  ">
+        <img src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-01-512.png" class=" h-20 w-20 fixed" alt="">
+    </div>
+    <!-- section1 -->
+    <div class="h-screen w-full  bg-black flex lg:flex-row flex-col  items-center justify-center ">
+       <div class="h-full  lg:w-[30%] w-full  mt-44 lg:ml-40   lg:p-14 items-center ">
+        <div>
+            <p class=" text-blue-600 lg:text-start lg:pt-0 pt-6 text-center">INNOVATING WEB3 BY</p>
+        </div>
+        <br/>
+        <div>
+            <p class=" text-6xl  font-semibold  lg:text-start text-center  text-white">SOCIALF AI</p>
+        </div>
+        <br>
+        <div>
+            <p class=" text-white text-xl  lg:p-0 p-3 font-mullish">
+                Chat3 is the pioneer of SocialFAI (SocialFi + AI), blending blockchain with advanced AI to empower Web3 communities. It delivers tools for personalization, engagement, and monetization, enabling creators to connect smarter, grow faster, and earn more.
+            </p>
+        </div>
+       </div>
+       <div class="lg:w-[50%] w-full mb-20 lg:p-0 p-2 lg:mr-40 mr-4 rounded-md shadow-black transition-all duration-700 hover:shadow-orange-50  hover:scale-105" >
+        <img src="https://chat3.one/_nuxt/intro_section.D2PhyZh8.png" alt="">
+       </div>
+    </div>
+
+    <!-- section2 -->
+
+    <div class="flex lg:flex-row flex-col-reverse items-center lg:pt-0 pt-20 lg:p-0 p-5 justify-between lg:h-[40vh] h-full w-full  bg-black">
+        <div class="lg:h-[50vh] h-auto lg:w-[30%] w-full bg-black lg:mb-40 lg:ml-60">
+            <img   src="https://chat3.one/_nuxt/video_section.v29J2G64.png"  alt="">
+        </div>
+        <div class="h-[50vh] lg:w-[40%] lg:text-start text-center w-full lg:mr-40 lg:mb-40 ">
+            <div>
+                <p class=" text-white ">REVOLUTIONIZING SOCIALFAI WITH</p>
+            </div>
+            <br/>
+            <div>
+                <p class=" lg:text-5xl text-3xl  text-[#6238fb] font-bold">VIDEO & MULTI-CHAIN
+                    TECHNOLOGY</p>
+            </div>
+            <br>
+            <div>
+                <p class=" text-white   font-mullish">
+                    Chat3 is the pioneer of SocialFAI, offering a decentralized, video-first platform for real-time events with up to 100,000 participants. Powered by multi-chain technology and advanced AI, it enables creators to engage audiences, personalize experiences, and monetize seamlessly.
+                </p>
+                <br>
+                <p class="text-white  text-xl">ALL ON A SINGLE PLATFORM.</p>
+            </div>
+        </div>
+    </div>
+
+   <!-- section3 -->
+
+    <div class="flex lg:flex-row flex-col items-center justify-between lg:h-[70vh] h-full gap-5 w-full overflow-hidden bg-black">
+        <div class="lg:w-[20%] w-full h-[30vh] lg:mt-0 mt-10  lg:ml-16 lg:mb-auto bg-black lg:pl-14 lg:pt-0 pt-10">
+            <p class="lg:text-5xl text-3xl text-center font-semibold text-[#6238fb]">FEATURES DESIGNED FOR WEB3</p>
+        </div>
+        <div class="lg:h-[60vh] h-full lg:w-[70%]  w-full lg:gap-0 gap-y-3  grid lg:grid-cols-2 grid-cols-1 lg:mb-auto  p-2 lg:mr-28 lg:ml-10">
+            <div class="bg-black  border border-indigo-100 flex lg:w-[90%]  lg:h-[80%]  h-full rounded-md">
+                <div class="w-[30%]  h-full ml-0 rounded-l-md pl-2 pt-3 bg-black">
+                    <img src="https://chat3.one/_nuxt/real_time.jgelWX_b.png" class="px-4" alt="">
+                </div>
+                <div class="w-[70%]  h-[40vh]  ">
+                    <p class="text-xl  font-semibold text-start  text-white  lg:ml-5 p-1 lg:mt-2 ">REAL-TIME VIDEO COMMUNICATIONS</p>
+                    <p class="lg:text-sm text-start p-1 lg:ml-5 lg:w-[80%] w-full lg:h-1/2 h-auto  text-white  lg:mb-2 ">Enjoy high quality video and audio with low latency for up to 10,000 participants. Create more engaging communications with built-in tools and customizations.</p>
+                </div>
+            </div>
+            <div class="bg-black  border border-indigo-100 flex lg:w-[90%] w-full lg:h-[80%] h-full  rounded-md">
+                <div class="w-[30%] h-full ml-0 rounded-l-md pl-2 pt-3 bg-black">
+                    <img src="https://chat3.one/_nuxt/sun.DUQ6gAtK.png" class="px-4" alt="">
+                </div>
+                <div class="w-[70%] h-[40vh] ">
+                    <p class="text-xl  font-semibold text-start  text-white bg-black ml-5 p-1 mt-2 ">AI-CHAT AGENT</p>
+                    <p class="text-sm text-start p-1 ml-5 w-[80%] h-1/2  text-white mb-2 ">Clone yourself with AI to manage communications, engage with your social network, and earn through social mining activities like post interactions and shares—all effortlessly.</p>
+                </div>
+            </div>
+            <div class="bg-black  border border-indigo-100 flex lg:w-[90%] w-full lg:h-[80%] h-full  rounded-md">
+                <div class="w-[30%] h-full ml-0 rounded-l-md pl-2 pt-3 bg-black">
+                    <img src="https://chat3.one/_nuxt/airdrops.BJzvh4BP.png" class="px-4" alt="">
+                </div>
+                <div class="w-[70%] h-full ">
+                    <p class="text-xl  font-semibold text-start   text-white bg-black ml-5 p-1 mt-2 ">CREATE AND TRADE MEMES ON LIVESTREAM</p>
+                    <p class="text-sm text-start p-1 ml-5 w-[80%] h-1/2  text-white mb-2 ">Unleash your creativity and trade memes live—fun, interactive, and rewarding!ns.</p>
+                </div>
+            </div>
+            <div class="bg-black  border border-indigo-100 flex lg:w-[90%] w-full lg:h-[80%] h-full  rounded-md">
+                <div class="w-[30%] h-full ml-0 rounded-l-md pl-2 pt-3 bg-black">
+                    <img src="https://chat3.one/_nuxt/gift.DxNh3y9M.png" class="px-4" alt="">
+                </div>
+                <div class="w-[70%] h-full ">
+                    <p class="text-xl  font-semibold text-start   text-white bg-black ml-5 p-1 mt-2 ">
+                        BATCH AIRDROPS FOR ENGAGEMENT</p>
+                    <p class="text-sm text-start p-1 ml-5 w-[80%] h-1/2  text-white mb-2 ">
+                        Effortlessly distribute tokens to reward and engage your community.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section4 -->
+     <div class="lg:h-[60vh]  h-full flex lg:flex-row flex-col w-full bg-black lg:gap-5 overflow-hidden">
+        <div class=" h-[60vh] lg:w-1/2 w-full flex items-center justify-center bg-black "> 
+            <img src="https://chat3.one/_nuxt/follower.HjlPdZYH.png" class="h-full w-auto" alt="">
+        </div>
+        <div class="h-[60vh]  lg:w-1/2 w-full lg:text-start text-center ">
+            <div class="bg-black lg:w-[70%]">
+                <h2 class="text-white mt-2">OUR THRIVING COMMUNITY OF INFLUENCERS WITH</h2>
+            </div>
+            <div class="h-40 lg:w-[70%] w-full flex lg:text-start text-center bg-black mt-5">
+                <div class="w-1/2">
+                    <p class="text-[#6238fb] text-5xl font-bold mt-2 p-6">1M+</p>
+                    <p class="text-white p-2 ml-6 text-2xl">USERS</p>
+                </div>
+                <div class="w-1/2">
+                    <p class=" text-5xl text-[#6238fb] font-bold mt-2 p-6">50M+</p>
+                    <p class="text-white p-2 ml-6 text-2xl">FOLLOWERS</p>
+                </div>
+            </div>
+            <div class="lg:w-[70%] w-full  mt-2">
+                <p class="text-white lg:p-0 p-4">Our rapidly expanding community of creators and users find immense value in being part of Chat3’s comprehensive Web3 ecosystem which fosters seamless communication and financial opportunities. With the regular introduction of innovative features, Chat3 consistently delivers an enriching experience for our members.</p>
+            </div>
+        </div>
+    </div>
+
+     <!-- section5 -->
+     
+    <div class="lg:h-[40vh] h-full w-full bg-black overflow-hidden">
+        <div class="  lg:ml-[30%] lg:text-start text-center text-5xl font-semibold text-[#6238fb]">
+           <p>Investors and Partners</p>
+        </div>
+        <div class="lg:m-5 lg:mt-14 lg:ml-20 grid lg:grid-cols-4 grid-cols-2  lg:gap-3 gap-4  lg:p-5 px-5 mt-12 lg:px-8 lg:w-[90%] w-full  bg-black">
+            <img src="https://chat3.one/_nuxt/blizzard.Cln5asAb.svg" class="lg:w-[60%] w-full lg:h-auto h-[60%] " alt="">
+            <img src="https://chat3.one/_nuxt/arche_fund.h_pHD0DT.png" class="lg:w-[60%] w-full lg:h-auto h-[70%] " alt="">
+            <img src=" https://chat3.one/_nuxt/arche_fund.h_pHD0DT.png" class="lg:w-[60%] w-full lg:h-auto h-[90%] " alt="">
+            <img src="https://chat3.one/_nuxt/mantle.1nj_M8lV.svg" class="lg:w-[60%] w-full lg:h-auto h-[60%] " alt="">
+            <img src="https://chat3.one/_nuxt/avalanche.1ASiGitu.png" class="lg:w-[60%] w-full lg:h-auto h-[60%] " alt="">
+            <img src="https://chat3.one/_nuxt/aws.BHDV83yu.svg" class="lg:w-[60%] w-full lg:h-[80%] h-[60%] " alt="">
+            <img src="https://chat3.one/_nuxt/googlecloud.DDrNLBHm.svg" class="lg:w-[60%] w-full lg:h-auto h-[60%] " alt="">
+            <img src="https://chat3.one/_nuxt/datagram.DZ69keM7.svg" class="lg:w-[60%] w-full lg:h-auto h-[60%] " alt="">    
+        </div>
+    </div>
+
+    <!-- section6 -->
+
+
+    <div class="w-full lg:h-screen lg:p-0 p-5 bg-black">
+        <div class="text-5xl text-[#6238fb] font-bold text-center pt-20">
+            <p>NEWS</p>
+        </div>
+        <div class=" lg:h-[70%] h-full lg:w-[80%] w-full  lg:ml-36  grid lg:grid-cols-3 grid-cols-1  lg:gap-4 gap-y-5  mt-16 bg-black">
+ <!-- box1 -->
+            <div class="h-[70vh] w-[100%] border shadow-md shadow-purple-600 hover:shadow-[#6238fb]  border-purple-700 rounded-lg bg-black">
+                <div class="w-full h-[12%] rounded-tl-lg  rounded-tr-lg flex bg-black">
+                    <div class="w-[20%] h-fit  pl-3" >
+                        <img src="https://chat3.one/nstatic/favicon.ico" class=" w-full h-[50%]" alt="">
+                    </div>
+                   <div class="w-[90%] flex ">
+                     <div class="w-1/2 ">
+                        <p class="text-white font-sans font-bold mt-2">Chat3</p>
+                        <p class="text-white">@chat3one<span class="text-[#6BC9FB] font-sans font-bold">.Follow</span></p>
+                     </div>
+                     <div class="w-1/2 ml-24">
+                        <img src="./images.png" class="h-10 " alt="">
+                     </div>
+                   </div>
+                </div>
+                <div class="w-full h-[15%] flex ">
+                    <p class="text-white font-sans text-xl pl-10">even THE president has launched a token. Wen Chat3</p>
+        
+                </div>
+                
+                <div class="w-full h-[10%] flex  bg-black">
+                    <p class="text-white font-sans text-xl p-5 pl-8">At this point, just switch seats already</p>
+                </div>
+                <div class="w-full h-[8%] flex">
+                    <img src="https://abs-0.twimg.com/emoji/v2/svg/1f4a1.svg" class="h-8 pl-6" alt=""/>
+                </div>
+                <div class="w-full h-[50%] flex ">
+                    <img src="https://pbs.twimg.com/media/GiEYx-ybkAA58ep?format=png&name=small" class=" h-full rounded-lg pl-10 " alt=""/>
+                </div>
+                <div>
+                    <p class="text-center">9:00PM.JAN 25 2025</p>
+                </div>
+                
+            </div>
+ 
+ <!-- box2 -->
+
+            <div class="lg:h-[60%] h-full  w-[100%] border rounded-md shadow-md lg:shadow-purple-600 hover:shadow-[#6238fb]  border-purple-700 bg-black">
+                <div class="w-full lg:h-[40%]  rounded-tl-lg  rounded-tr-lg flex ">
+                    <div class="w-[18%] h-full " >
+                        <img src="https://chat3.one/nstatic/favicon.ico" class=" w-full h-[50%]" alt="">
+                    </div>   
+                    <div class="w-[82%] h-full  flex flex-col ">
+                        <div class="w-full lg:h-[50%] flex bg-black">
+                            <div class="w-1/2  ">
+                                <p class="text-white font-sans font-bold mt-2">Chat3</p>
+                                <p class="text-white">@chat3one<span class="text-[#6BC9FB] font-sans font-bold">.Follow</span></p>
+                            </div>
+                            <div class="w-1/2 h-full bg-black lg:ml-32">
+                                <img src="./images.png" class="h-10 " alt="">
+                            </div>
+                        </div>
+                        <div class=" w-full lg:h-[60%] ">
+                            <p class="text-white">Big surprise at <span class="font-bold">10k followers</span> </p>
+                            <p class="mt-5 text-white">Stay locked in and let’s make it happen, chat</p>
+                        </div>
+                    </div> 
+                    
+                </div>
+                <div class="w-[60%] h-fit flex " >
+                    <img src="https://chat3.one/nstatic/favicon.ico" class="bg-black w-[28%] " alt="">
+                    <div class="flex flex-col ">
+                        <p class="text-white font-sans font-bold mt-2">Chat3</p>
+                        <p class="text-white">@chat3one<span class="text-[#6BC9FB] font-sans font-bold">.Follow</span></p>
+                    
+                    </div>
+                </div>
+                
+               
+               
+            </div>
+
+ <!-- box3 -->
+
+            <div class="  lg:w-full border shadow-md shadow-purple-600 hover:shadow-[#6238fb]  border-purple-700 rounded-lg bg-black">
+                <div class="w-full lg:h-[12%] rounded-tl-lg  rounded-tr-lg flex bg-black">
+                    <div class="w-[20%] h-fit  pl-3" >
+                        <img src="https://chat3.one/nstatic/favicon.ico" class="w-full h-[50%]" alt="">
+                    </div>
+                   <div class="w-[90%] flex ">
+                     <div class="w-1/2 ">
+                        <p class="text-white font-sans font-bold mt-2">Chat3</p>
+                        <p class="text-white">@chat3one<span class="text-[#6BC9FB] font-sans font-bold">.Follow</span></p>
+                     </div>
+                     <div class="w-1/2 ml-32">
+                        <img src="./images.png" class="h-10 " alt="">
+                     </div>
+                   </div>
+                </div>
+                <div class="w-full h-[15%] flex ">
+                    <p class="text-white font-sans text-xl pl-10">even THE president has launched a token. Wen Chat3</p>
+        
+                </div>
+                
+                <div class="w-full h-[10%] flex  bg-black">
+                    <p class="text-white font-sans text-xl p-5 pl-8">At this point, just switch seats already</p>
+                </div>
+                <div class="w-full h-[8%] flex">
+                    <img src="https://abs-0.twimg.com/emoji/v2/svg/1f4a1.svg" class="h-8 pl-6" alt=""/>
+                </div>
+                <div class="w-full h-[50%] flex ">
+                    <img src="https://pbs.twimg.com/media/GiEYx-ybkAA58ep?format=png&name=small" class=" h-full rounded-lg pl-10 " alt=""/>
+                </div>
+                <div>
+                    <p class="text-center">9:00PM.JAN 25 2025</p>
+                </div>
+                
+            </div>
+
+
+        </div>
 
     </div>
 
+    <!-- new section -->
 
+    <div class="w-full lg:h-[67vh] h-full   bg-black lg:overflow-hidden">
+        <div class="w-[90%] lg:h-[80%]  h-full flex lg:flex-row flex-col lg:justify-between lg:m-8 lg:ml-20">
+            <div class="lg:w-[40%] w-full h-full ">
+                <div class="w-full lg:h-[50%] h-full flex flex-col lg:mt-40 lg:pl-0  ">
+                    <div class="lg:w-[60%] w-full lg:ml-0 ml-7 lg:h-[50%] h-full lg:mt-2">
+                        <p class="lg:text-5xl  text-3xl font-bold text-[#6238fb]">JOIN THE COMMUNITY</p>
+                    </div>
+                    <div class="w-[50%] h-[10%]  lg:pl-0 pl-7 text-white mt-2">
+                        <p>Get rewarded for your engagement</p>
+                    </div>
+                    <div class="lg:w-full w-[45%] lg:ml-0 ml-7 h-[20%] bg-[#6238fb] font-sans font-bold rounded-md py-2.5 text-white px-6 mt-3">
+                        <button>SIGN IN</button>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-[40%] w-full h-full flex justify-center ">
+                <img src="./join.CQWvpCpB.png"  alt=""/>
+            </div>
+        </div>
 
-
+    <!-- footer section -->
+    
+</div>
+<footer class="bg-black w-full lg:h-[9vh] h-full  border-t-2  " >
+    <div class="flex justify-between  p-2 lg:ml-10 ml-2 lg:pt-4 pt-2">
+        <p class=" text-xs text-white">
+            Operated by JDW Labs PTE LTD
+            <br/>
+            © 2024 Chat3.one|All Rights Reserved
+        </p>
+        <p class="text-white font-bold  lg:mr-10 mr-2">
+            TERMS OF USE
+        </p>
+    </div>
+</footer>
 </body>
-
 </html>
